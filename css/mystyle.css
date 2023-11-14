@@ -1,0 +1,36 @@
+:root{
+    --bgcolor01: #fca000;
+    --bgcolor02: #fff4ca;
+    --textcolor01: #00142F;
+    --textcolor02: #504E63;
+    /* Celestial Green */
+    --dscolor1_1: #b2a59f;
+    --dscolor1_2: #023459;
+    --dscolor1_3: #1e646e;
+    --dscolor1_4: #002c2f;
+    /* snowwww&sunshine */
+    --dscolor2_1: #ffefa1;
+    --dscolor2_2: #ffb21a;
+    --dscolor2_3: #876363;
+    --dscolor2_4: #414b6f;
+    /* luminous lines */
+    --dscolor3_1: #8ad5eb;
+    --dscolor3_2: #8a54a2;
+    --dscolor3_3: #5954a4;
+    --dscolor3_4: #04254e;
+    /* vitamin sea */
+    --dscolor4_1: #0359ae;
+    --dscolor4_2: #14b09b;
+    --dscolor4_3: #ebe5d9;
+    --dscolor4_4: #cc8a56;
+    /* Aizorna sunset */
+    --dscolor5_1: #fec804;
+    --dscolor5_2: #f26322;
+    --dscolor5_3: #7a2d59;
+    --dscolor5_4: #181b46;
+}
+/* 背景圖片自動填滿版縮放 */
+.bg-coverimg{
+    background-position: center center;
+    background-size: cover;
+}

@@ -1,0 +1,159 @@
+/* 首頁 index css */
+.bgimg1{
+    background-image: linear-gradient(rgba(7,7,7,0.1),rgba(0,0,0,0.8)) ,url(../images/bg01.jpg);
+    background-attachment: relative;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.bgimg2{
+    background-image:url(../images/bg02.png);
+    background-attachment: relative;
+    background-repeat: repeat;
+}
+
+.indexText1{
+    font-size: 32px;
+    font-weight: bolder;
+    background-color: rgba(0,0,0,0.2);
+    color: var(--dscolor4_3);
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 20px;
+}
+
+.indexText2{
+    color: var(--dscolor1_2);
+}
+
+.indexText1:hover{
+    border-bottom: 3px solid var(--dscolor4_3); 
+}
+
+footer{
+    background-color: aliceblue;
+}
+
+
+
+
+/* 關於小刻 about css */
+.banner1{
+    background-image: url(../images/bg08.png);
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bgimg3-1{
+    background-image: url(../images/bg09.png);
+    height: 300px;
+}
+
+.bgimg3-2{
+    background-image: url(../images/bg10.png);
+    height: 300px;
+}
+.bgimg3-3{
+    background-image: url(../images/bg06.png);
+    height: 300px;
+}
+.bgimg3-4{
+    background-image: url(../images/bg11.png);
+    height: 300px;
+}
+
+.timeline{
+    position: relative;
+}
+.timeline::before{
+    position: absolute;
+    content: "";
+    background-color: var(--dscolor5_3);
+    width: 5px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timelineP{
+    position: relative;
+}
+.timelineP::before{
+    position: absolute;
+    content: "";
+    background-color: var(--dscolor5_1);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timelineP:hover::before{
+    width: 25px;
+    height: 25px;
+    border: 5px solid var(--dscolor5_2);
+    background-color: var(--dscolor5_1);
+}
+
+/* product01 css */
+.banner2{
+    background-image: url(../images/bg15.png);
+    height: 350px;
+    background-position: top center;
+    background-size: cover;
+}
+
+.bgimg-p1{
+    background-image: url(../images/Arknights_w1.png);
+    height: 468px;
+    background-position: center center;
+    background-size: contain;
+
+}
+/* product02 css */
+.banner3{
+    background-image: url(../images/bg13.png);
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bgimg-p2{
+    background-image: url(../images/p01-1.jpg);
+    height: 450px;
+}
+
+/* news03 */
+.banner_n03{
+    background-image: url(../images/bg14.png);
+}
+
+
+@media screen and (max-width:767px) {
+    section.bgimg1{
+        background-image: url(../images/bg03.gif);
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        
+    }
+    .indexText1{
+        font-size: 24px;
+        background-color: rgba(0,0,0,0.6);
+        padding: 5px;
+        margin-top: 10px;
+    }
+    
+    .timeline::before,.timelineP::before{
+        display: none;
+    }
+
+
+    /* product01 & prouct02  */
+    .cardarea{
+        margin-top: 16px;
+    }
+}

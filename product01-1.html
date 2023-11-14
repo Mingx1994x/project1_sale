@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小刻's 武器箱</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.revise.css" />
+    <link rel="stylesheet" href="./css/mystyle.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><span class="hTitle text-warning">小刻's</span> 武器箱</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-myicon1"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">首頁</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle myactive" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                商品介紹
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="./product01.html">冒險家系列</a></li>
+                                <li><a class="dropdown-item" href="./product02.html">居家必備系列</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">職業獵人專區</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">關於小刻</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="banner3"></div>
+    </header>
+    <div class="container">
+        <p class="fs-3 text-warning mt-2">|冒險家系列-產品介紹<small>Details</small></p>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="bgimg-p1"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="con-text-p2">
+                    <h3>仿刀赤霄</h3>
+                    <p>陳sir的愛刀，擁有古老的刀魂，一刀祭出，灰飛煙滅</p>
+                    <p>價格: 999元/把</p>
+                    <p>附帶技能: 
+                        <span class="text-bg-success rounded-3 p-1 fw-bold">拔刀</span>
+                        <span class="text-bg-warning rounded-3 p-1 fw-bold">鞘擊</span>
+                        <span class="text-bg-danger rounded-3 p-1 fw-bold">絕影</span>
+                        <div class="form-group">
+                            <label for="" class="form-label">數量: <span id="pdNumber">5</span>把</label>
+                            <input type="range" class="form-range" min="0" max="10" step="1" id="pdRange">
+                        </div>
+                        <button class="btn btn-primary mt-2 w-100">訂購</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center fw-bold mt-2">跨平台02期班製作2023.10</footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#pdRange").change(function(){
+                // console.log()
+                $("#pdNumber").text($(this).val());
+            });
+        })
+    </script>
+</body>
+
+</html>
